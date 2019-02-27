@@ -2,11 +2,9 @@
 app congif
 http://java2db.com/servlets/aes-password-encryption-in-javascript-and-decryption-in-java-servlet
 
-index.jsp
-  <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
- pageEncoding="ISO-8859-1"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+#44
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -24,18 +22,17 @@ function doSubmit()
 alert("Encrypted Password"+document.myform.pwd.value);
  form.submit();
 }
-
+ 
 </script>
 </head>
 <body>
 <form method="post" name="myform" action="encrypturl" >
 User name : <input type="text" name = "user" />
 Password : <input type="password" name="pwd" id="pwd"/>
-<input type="submit" value="Submit" onClick="doSubmit()"/> 
+<input type="button" value="Submit" onClick="doSubmit()"/> 
 </form>
 </body>
 </html>
-
 
 -----  EncryptServlet.java
 
